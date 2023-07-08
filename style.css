@@ -1,0 +1,154 @@
+*{
+    font-family: 'Concert One', cursive;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b0c10;
+}
+
+h1{
+    font-size: 120px;
+    color: #66fcf1;
+    transition: 1s ease-in-out;
+    animation: animate 1s infinite;
+}
+
+@keyframes animate{
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.main-box{
+    border-radius: 20px;
+    min-height: 150px;
+    width: 550px;
+    background-color: #1f2833;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.display-box{
+    /* border: 1px solid black; */
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.display-box input{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 70%;
+    background-color: #c5c6c7;
+    color: #0b0c10;
+}
+
+.display-box button{
+    font-size: 27px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-color: #45a29e;
+    color: white;
+    font-weight: bolder;
+    width: 20%;
+    color: #0b0c10;
+}
+
+.item-list{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 90%;
+}
+
+li{ 
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #66fcf1;
+    /* border: 1px solid #45a29e; */
+    box-shadow: 0 0 10px #45a29e;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    /* background-color: #45a29e; */
+    position: relative;
+    /* padding-left: 40px; */
+}   
+
+
+.checked{
+    text-decoration: line-through;
+    background-color: #45a29e; 
+    color: black;
+}
+
+.spanClosed{
+
+    /* background-color: white; */
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: url("close-button-png-30221.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    /* border: 1px solid white; */
+}
+
+/* .spanClosed::before{
+    content: "X";
+    position: absolute;
+    margin-left: 5px;
+    left: 0;
+    top: 10px;
+
+} */
+
+/* .spanTick{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    margin-left: 10px;
+    background-color: #fff;
+    background: transparent;
+    border: 1px solid #45a29e;;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.spanCorrect{
+    background: url("tick.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+}
+ */
